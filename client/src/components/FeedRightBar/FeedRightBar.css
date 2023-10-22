@@ -1,0 +1,68 @@
+.feed-right-sidebar {
+    height:auto;
+    min-height: 100vh;
+    float: right;
+    width: 400px;
+    margin: 40px 0px 15px 24px;
+    font-size: 15px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+  }
+
+  .search-friends-container{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .friend-search{
+    height:35px;
+    width: auto;
+    margin-right: 40px;
+  }
+
+  .post-btn {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #009dff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .post-btn:hover {
+    background-color: #0086d8;
+  }
+
+  .friend-search-icon{
+    margin-right: 10px;
+  }
+
+  .search-friends-header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .all-friends-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100%;
+  }
+  .friend-container{
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .friend-avatar{
+    margin-left: 5px;
+  }
