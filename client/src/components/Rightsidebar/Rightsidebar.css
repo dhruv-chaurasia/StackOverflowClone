@@ -27,7 +27,7 @@
   .right-sidebar-div-1 .right-sidebar-div-2 {
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   }
   
   .right-sidebar-div-1 .right-sidebar-div-2 p {

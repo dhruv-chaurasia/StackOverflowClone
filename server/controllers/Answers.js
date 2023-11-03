@@ -25,7 +25,7 @@ const updateNoOfQuestions = async (_id, noOfAnswers) => {
       $set: { noOfAnswers: noOfAnswers },
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 

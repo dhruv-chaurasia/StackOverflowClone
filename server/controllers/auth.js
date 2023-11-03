@@ -25,7 +25,7 @@ export const login = async(req,res)=>{
     try {
     const existinguser = await users.findOne({ email });
     if (!existinguser) {
-      return res.status(404).json({ message: "User don't Exist." });
+      return res.status(404).json({ message: "User doesn't Exist." });
     }
     const isPasswordCrt = await bcrypt.compare(password, existinguser.password);
     if (!isPasswordCrt) {
@@ -38,6 +38,6 @@ export const login = async(req,res)=>{
     );
     res.status(200).json({ result: existinguser, token });
     } catch (error) {
-        res.status(500).json("Something went worng...");
+        res.status(500).json({message:"Something went worng..."});
     }
 }

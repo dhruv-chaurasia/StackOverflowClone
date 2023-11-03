@@ -15,7 +15,7 @@ export const createPost = (postData, navigate) => async (dispatch) => {
 export const fetchAllPosts = () => async (disptach) => {
   try {
     const { data } = await api.getAllPosts();
-    console.log(data);
+    // console.log(data);
     disptach({ type: "FETCH_ALL_POSTS", payload: data });
   } catch (error) {
     console.log(error);

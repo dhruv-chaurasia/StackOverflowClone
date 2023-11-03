@@ -7,6 +7,7 @@ export const askQuestion = (questionData, navigate) => async (dispatch) => {
     dispatch(fetchAllQuestions());
     navigate("/");
   } catch (error) {
+    // alert(error.response.data.message);
     console.log(error);
   }
 };
@@ -16,6 +17,7 @@ export const fetchAllQuestions = () => async (disptach) => {
     const { data } = await api.getAllQuestions();
     disptach({ type: "FETCH_ALL_QUESTIONS", payload: data });
   } catch (error) {
+    // alert(error.response.data.message);
     console.log(error);
   } 
 };
@@ -52,6 +54,7 @@ export const postAnswer = (answerData) => async (dispatch) => {
     dispatch({ type: "POST_ANSWER", payload: data });
     dispatch(fetchAllQuestions());
   } catch (error) {
+    // alert(error.response.data.message);
     console.log(error);
   }
 };

@@ -12,7 +12,7 @@ const FeedRightBar = () => {
     else
     {setLook("");}
   }
-  console.log(look);
+  // console.log(look);
   return (
     <aside className="feed-right-sidebar">
       <div className='search-friends-container'>
