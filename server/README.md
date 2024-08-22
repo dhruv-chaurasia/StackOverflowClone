@@ -28,22 +28,3 @@ npm install
 ```
 npm start
 ```
-
-## Pics of the application
-
-<img src="https://github.com/Manoj-Athi/Stack-overflow/blob/main/Screenshots/Homepage.png">
-<img src="https://github.com/Manoj-Athi/Stack-overflow/blob/main/Screenshots/Question.png">
-
-## Live Link for the website:
-
-[Click here](https://stack-overflow-manoj.netlify.app/)
-
-## Contributions
-
-Contributions are always welcomed. Anyone can contribute to this project. Contributors will be given credits.
-
-## Credits
-
-This website uses icons from font awesome.
-
-Made with ❤️ by Prasad Shewale (paddyshewale00@gmail.coms)

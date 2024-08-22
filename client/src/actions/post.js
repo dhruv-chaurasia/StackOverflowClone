@@ -8,7 +8,7 @@ export const createPost = (postData, navigate) => async (dispatch) => {
     dispatch(fetchAllPosts());
     navigate("/feed");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -18,7 +18,7 @@ export const fetchAllPosts = () => async (disptach) => {
     // console.log(data);
     disptach({ type: "FETCH_ALL_POSTS", payload: data });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -27,7 +27,7 @@ export const LikePost = (id, value, userId) => async (dispatch) => {
     await api.LikePost(id, value, userId);
     dispatch(fetchAllPosts());
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -36,7 +36,7 @@ export const sharePost = (id, userId) => async (dispatch) => {
     await api.sharePost(id, userId);
     dispatch(fetchAllPosts());
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -45,6 +45,6 @@ export const deletePost = (id) => async (dispatch) => {
     await api.deletePost(id);
     dispatch(fetchAllPosts());
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };

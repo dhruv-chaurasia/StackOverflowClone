@@ -22,7 +22,7 @@ export const createPost = async(req,res,next)=>{
         image:image,
       });
         await file.save();
-        res.status(200).json("Posted a question successfully");
+      res.status(200).json("Posted a question successfully");
     } catch (error) {
         console.log(error);
         res.status(409).json("Couldn't create a new post");
